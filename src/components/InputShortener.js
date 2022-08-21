@@ -12,7 +12,7 @@ const InputShortener = () => {
     };
 
     return (
-        <div className='w-full md:w-2/3 px-4 md:px-0 flex flex-col md:flex-row justify-center '>
+        <div className='w-full md:w-2/3 px-4 md:px-0 flex flex-col md:flex-row justify-center space-y-3 md:space-y-0'>
             <input
                 type='text'
                 placeholder='Paste a link to shorten it'
@@ -23,7 +23,7 @@ const InputShortener = () => {
             <button
                 disabled={!value}
                 onClick={handleClick}
-                className='bg-orange-400 hover:bg-orange-500 max-w-xs ml-auto px-8 py-3 text-white  cursor-pointer disabled:cursor-not-allowed'
+                className='bg-orange-400 hover:bg-orange-500 max-w-xs md:ml-auto px-8 py-3 mx-auto text-white  cursor-pointer disabled:cursor-not-allowed'
             >
                 Shorten
             </button>
